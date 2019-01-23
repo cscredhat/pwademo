@@ -1,0 +1,53 @@
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>pwa</title>
+    <meta charset="utf-8">
+    <meta name="description" content="test">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="test">
+    <meta property="og:description" content="test">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="test">
+    <meta name="twitter:description" content="test">
+    <meta name="twitter:image" content="./logo.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/logo.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/logo.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/logo.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/logo.pngg">
+    <link rel="apple-touch-icon" sizes="114x114" href="/logo.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/logo.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/logo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo.png">
+    <meta name="msapplication-TileImage" content="/logo.png">
+    <link rel="icon" href="//logo.png" type="image/png">
+
+    <meta name="msapplication-TileColor" content="#4fc08d">
+    <meta name="theme-color" content="#4fc08d">
+
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="manifest" href="/manifest.json">
+
+
+  <body >
+    <div>pwa</div>
+   </body>
+   
+    <script>
+      Notification.requestPermission(function (status) {
+          var n = new Notification("您有一条消息！", { "icon": "", "body": "您一分钟后将有好运气" });
+     });
+    </script>
+   </html>
